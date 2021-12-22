@@ -59,11 +59,9 @@ class AppCenter {
   }
 
   /// Track error
-  static Future trackErrorAsync(String e, StackTrace? stack)  async {
+  static Future trackErrorAsync(String e, StackTrace? stack) async {
     final stackTrace = stack ?? StackTrace.current;
     final stackTraceElements = getStackTraceElements(stackTrace);
-
-    print("TESET: $stackTraceElements");
 
     await _methodChannel.invokeMethod('trackError', <String, dynamic> {
       'exception': e,

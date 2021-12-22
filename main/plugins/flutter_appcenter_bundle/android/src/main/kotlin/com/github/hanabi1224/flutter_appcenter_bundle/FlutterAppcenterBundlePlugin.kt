@@ -48,6 +48,7 @@ class FlutterAppcenterBundlePlugin : FlutterPlugin, MethodCallHandler, ActivityA
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         Log.d("onMethodCall", "[${methodChannelName}] ${call.method}")
+
         try {
             when (call.method) {
                 "start" -> {

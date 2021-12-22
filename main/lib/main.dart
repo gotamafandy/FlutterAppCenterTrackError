@@ -1,9 +1,10 @@
-import 'dart:io';
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_appcenter_bundle/flutter_appcenter_bundle.dart';
 
 Future<void> main() async {
+
   await AppCenter.startAsync(
     appSecretAndroid: '',
     appSecretIOS: '',
@@ -19,19 +20,6 @@ Future<void> main() async {
   FlutterError.onError = (errorDetails) {
     AppCenter.trackErrorAsync(errorDetails.exceptionAsString(), errorDetails.stack);
   };
-
-  try {
-    final outOfBounds =  ["satu", "dua", "tiga"];
-
-    final exception = outOfBounds[4];
-
-    print(exception);
-
-    // throw Exception("TEST EXCEPTION");
-  } catch (e, stackTrace) {
-    AppCenter.trackErrorAsync(e.toString(), stackTrace);
-  }
-
 }
 
 class MyApp extends StatelessWidget {
@@ -81,6 +69,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    final outOfBounds =  ["satu", "dua", "tiga"];
+
+    outOfBounds[4];
+
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
