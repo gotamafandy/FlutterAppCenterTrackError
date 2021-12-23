@@ -10,11 +10,4 @@ import Flutter
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
-    
-    override func applicationDidEnterBackground(_ application: UIApplication) {
-        let outOfBounds = ["1", "2", "3"]
-        
-        outOfBounds[4]
-    }
-    
 }

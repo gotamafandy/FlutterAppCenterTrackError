@@ -32,9 +32,6 @@ target 'Runner' do
   use_modular_headers!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-
-  pod 'AppCenter', '~> 4.4.1'
-  pod 'AppCenter/Distribute', '~> 4.4.1'
 end
 
 post_install do |installer|

@@ -1,7 +1,7 @@
 import 'dart:async';
 
+import 'package:app_center_bundle_sdk/app_center_bundle_sdk.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_appcenter_bundle/flutter_appcenter_bundle.dart';
 
 Future<void> main() async {
 
