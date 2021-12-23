@@ -6,8 +6,8 @@ import 'package:flutter_appcenter_bundle/flutter_appcenter_bundle.dart';
 Future<void> main() async {
 
   await AppCenter.startAsync(
-    appSecretAndroid: '',
-    appSecretIOS: '',
+    appSecretAndroid: 'c7a9f470-65f4-4f11-b39a-3481354f6b96',
+    appSecretIOS: '7ecb677c-cbea-4b04-970c-1730bd2e69f0',
     enableAnalytics: true, // Defaults to true
     enableCrashes: true, // Defaults to true
     enableDistribute: true, // Defaults to false

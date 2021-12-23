@@ -7,6 +7,6 @@ class MainActivity : FlutterActivity() {
     override fun onStop() {
         super.onStop()
 
-        //throw Exception("CRASH NATIVELY")
+        throw Exception("CRASH NATIVELY")
     }
 }
